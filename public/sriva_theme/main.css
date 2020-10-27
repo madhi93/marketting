@@ -20576,3 +20576,7 @@ a.fc-more:hover {
 	text-transform: capitalize;
 	font-size: 16px;
 }
+.foot-link .nav-link{
+    display: block;
+    text-align: center;
+}

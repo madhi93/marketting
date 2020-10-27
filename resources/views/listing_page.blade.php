@@ -48,7 +48,7 @@
 					                  		<div class="col-md-6">
 							                    <div class="form-group">
 							                      <label for="hp_no">HP NO</label>
-							                      <input type="number" class="form-control" id="hp_no" placeholder="HP Number" name="hp_number" required>
+							                      <input type="number" class="form-control" id="hp_no" placeholder="HP Number" name="hp_number">
 
 							                    </div>
 					                  		</div>
@@ -147,16 +147,21 @@
 							                    </div>
 					                  		</div>
 					                  	</div>
-					                  	
-	                            	<ul class="nav nav-justified foot-link" id="tabs">
-			                            
-			                            <li class="nav-item">
-			                                <a role="tab" class="nav-link next-tab" id="tab-4" data-toggle="tab" href="#tab-content-1">
-			                                    <span>Next</span>
-			                                </a>
-			                            </li>
-			                            
-			                        </ul>
+					                  	<div class="row">
+					                  		<div class="col-md-2 offset-md-5">
+
+				                            	<ul class="nav nav-justified foot-link" id="tabs">
+						                            
+						                            <li class="nav-item">
+						                                <a role="tab" class="nav-link next-tab mb-2 mr-2 btn btn-primary" id="tab-4" data-toggle="tab" href="#tab-content-1">
+						                                    <span>Next</span>
+						                                </a>
+						                            </li>
+						                            
+						                        </ul>
+					                  		</div>
+
+					                  	</div>
 						            </div>
 	                            	<div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
 	                            		<h5 class="card-title">Finance Details</h5>
@@ -215,19 +220,24 @@
 												</div>
 											</div>
 										</div>
-										<ul class="nav nav-justified foot-link" id="tabs">
-			                            	<li class="nav-item">
-				                                <a role="tab" class="nav-link previous-tab" id="tab-5" data-toggle="tab" href="#tab-content-1">
-				                                    <span>prev</span>
-				                                </a>
-				                            </li>
-				                            <li class="nav-item">
-				                                <a role="tab" class="nav-link next-tab" id="tab-6" data-toggle="tab" href="#tab-content-3">
-				                                    <span>Next</span>
-				                                </a>
-				                            </li>
-			                            
-			                        	</ul>
+										<div class="row">
+											<div class="col-md-6 offset-md-3">
+
+												<ul class="nav nav-justified foot-link" id="tabs">
+					                            	<li class="nav-item">
+						                                <a role="tab" class="nav-link previous-tab mb-2 mr-2 btn btn-primary" id="tab-5" data-toggle="tab" href="#tab-content-0">
+						                                    <span>prev</span>
+						                                </a>
+						                            </li>
+						                            <li class="nav-item">
+						                                <a role="tab" class="nav-link next-tab mb-2 mr-2 btn btn-primary" id="tab-6" data-toggle="tab" href="#tab-content-2">
+						                                    <span>Next</span>
+						                                </a>
+						                            </li>
+					                            
+					                        	</ul>
+											</div>
+										</div>
 	                            	</div>
 	                            	<div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
 	                            		<h5 class="card-title">Initial payment details</h5>
@@ -270,19 +280,24 @@
 
 					                  		</div>
 					                  	</div>
-					                  	<ul class="nav nav-justified foot-link" id="tabs">
-			                            	<li class="nav-item">
-				                                <a role="tab" class="nav-link previous-tab" id="tab-7" data-toggle="tab" href="#tab-content-2">
-				                                    <span>prev</span>
-				                                </a>
-				                            </li>
-				                            <li class="nav-item">
-				                                <a role="tab" class="nav-link next-tab" id="tab-8" data-toggle="tab" href="#tab-content-4">
-				                                    <span>Next</span>
-				                                </a>
-				                            </li>
-			                            
-			                        	</ul>
+					                  	<div class="row">
+					                  		<div class="col-md-6 offset-md-3">
+
+							                  	<ul class="nav nav-justified foot-link" id="tabs">
+					                            	<li class="nav-item">
+						                                <a role="tab" class="nav-link previous-tab mb-2 mr-2 btn btn-primary" id="tab-7" data-toggle="tab" href="#tab-content-1">
+						                                    <span>prev</span>
+						                                </a>
+						                            </li>
+						                            <li class="nav-item">
+						                                <a role="tab" class="nav-link next-tab mb-2 mr-2 btn btn-primary" id="tab-8" data-toggle="tab" href="#tab-content-3">
+						                                    <span>Next</span>
+						                                </a>
+						                            </li>
+					                            
+					                        	</ul>
+					                  		</div>
+					                  	</div>
 	                            	</div>
 	                            	<div class="tab-pane tabs-animation fade" id="tab-content-3" role="tabpanel">
 	                            		<h5 class="card-title">Other details</h5>
@@ -315,11 +330,12 @@
 							                      	</div>
 							                    </div>
 					                  		</div>
-					                  		<div class="row">
-					                  			<div class="col-md-12">
+					                  	</div>
+				                  		<div class="row">
+				                  			<div class="col-md-6 offset-md-3">
 					                  				<ul class="nav nav-justified foot-link" id="tabs">
 						                            	<li class="nav-item">
-							                                <a role="tab" class="nav-link tab-switch previous-tab" id="tab-9" data-toggle="tab" href="#tab-content-3">
+							                                <a role="tab" class="nav-link tab-switch previous-tab mb-2 mr-2 btn btn-primary" id="tab-9" data-toggle="tab" href="#tab-content-2">
 							                                    <span>prev</span>
 							                                </a>
 							                            </li>
@@ -328,9 +344,8 @@
 							                            </li>
 						                            
 						                        	</ul>
-					                  			</div>
-					                  		</div>
-					                  	</div>
+				                  			</div>
+				                  		</div>
 					                  	
 	                            	</div>
 	                            </div>
