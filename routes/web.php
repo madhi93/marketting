@@ -21,6 +21,9 @@ Auth::routes();
 
 
 Route::get('/listing-page', 'HomeController@listingPage')->name('lpage');
+
+Route::get('/view', 'HomeController@viewlistingPage')->name('vlpage');
+
 Route::get('/create/ajax-vehicle-type', 'HomeController@createVehiclepage')->name('avp');
 Route::get('/due-expense-page', 'HomeController@dueExpensePage')->name('dupage');
 Route::get('/due-recipt', 'HomeController@dueRecipt')->name('ddpage');

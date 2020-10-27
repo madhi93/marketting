@@ -93,7 +93,7 @@
 							                      	<label for="vehicle_category">Vehicle Category</label>
 							                      	
 							                      	<select id="vehicle_category" class="form-control vehicle_type" name="vehicle_category">
-														<option value="">select the option  </option>
+														<option value="">Select the option  </option>
 														@foreach($categories as $category)
 															<option value="{{$category->id}}">{{$category->category}}</option>
 														@endforeach

@@ -39,10 +39,15 @@ class HomeController extends Controller
         return view('due_expense_page');
 
     }
+    public function viewlistingPage(){
+        return view('view');
+
+    }
     public function dueRecipt(){
         return view('due_recipt');
 
     }
+
     public function createVehiclepage(Request $request){
         $return = null;
         if($request->type_id == 'category'){

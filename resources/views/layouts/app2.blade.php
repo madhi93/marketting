@@ -13,7 +13,7 @@
     <!-- plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <!-- <link rel="stylesheet" href="{{ asset('template/css/jquery-steps.css') }}"> -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="{{ asset('sriva_theme/main.css') }}">
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
@@ -66,16 +66,18 @@
 <!-- <script src="{{asset('template/js/jquery-steps.min.js')}}"></script> -->
 
 <!-- MDBootstrap Datatables  -->
-<link href="css/addons/datatables2.min.css" rel="stylesheet">
+<!-- <link href="css/addons/datatables2.min.css" rel="stylesheet"> -->
 <!-- MDBootstrap Datatables  -->
-<script type="text/javascript" src="js/addons/datatables2.min.js"></script>
+<!-- <script type="text/javascript" src="js/addons/datatables2.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
 <script src="{{asset('sriva_theme/assets/scripts/main.js')}}"></script>
 
-<script src="{{asset('template/js/custom.js')}}"></script>
+<script src="{{asset('sriva_theme/assets/scripts/custom.js')}}"></script>
 <script>
     
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     var APP_URL = {!! json_encode(url('/')) !!};
     console.log(APP_URL);
