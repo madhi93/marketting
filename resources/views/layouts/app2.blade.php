@@ -75,6 +75,42 @@
 <script>
     
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var APP_URL = {!! json_encode(url('/')) !!};
+    console.log(APP_URL);
+</script>
+
+<script>
+    $('.vehicle_type').on('change', function(e){
+        console.log(e);
+        var id = e.target.value;
+        var append_id ="";
+        var get_m = "";
+        var type_id = e.target.id.split('_')[1];
+        if(type_id == 'category'){
+            var append_id = '#vehicle_brand';
+            get_m = 'brand';
+            $('#vehicle_model').empty();
+        }else{
+            var append_id = '#vehicle_model';
+            get_m = 'model';
+        }
+        $.get(APP_URL+'/create/ajax-vehicle-type?type_id=' + type_id +'&id='+id, function(data) {
+            console.log(data);
+            console.log(get_m);
+            $(append_id).empty();
+            $(append_id).append('<option value="">select the option  </option>');
+            $.each(data.data, function(index,subCatObj){
+                console.log(subCatObj);
+                console.log(subCatObj[get_m]);
+                var option = "<option value =' "+ index  +"'>"+subCatObj[get_m]+"</option>";
+                $(append_id).append(''+option+'');
+            });
+        });
+    });
+</script>
+
 <!-- End custom js for this page-->
 </body>
 </html>

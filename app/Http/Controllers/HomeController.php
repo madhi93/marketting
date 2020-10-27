@@ -31,7 +31,8 @@ class HomeController extends Controller
     }
 
     public function listingPage(){
-        return view('listing_page');
+        $categories = DB::table('vehicle_category')->get();
+        return view('listing_page',compact('categories'));
     }
 
     public function dueExpensePage(){
@@ -42,6 +43,19 @@ class HomeController extends Controller
         return view('due_recipt');
 
     }
+    public function createVehiclepage(Request $request){
+        $return = null;
+        if($request->type_id == 'category'){
+            $return = DB::table('vehicle_brand')->where('category_id',$request->id)->orderBy('brand')->get();
+
+        }else{
+            $return = DB::table('vehicle_model')->where('brand_id',$request->id)->orderBy('model')->get();
+
+        }
+        return response()->json(['status' => '200',  'data' => $return]);
+
+    }
+
     public function newRegistration(Request $request){
         // dd($request->all()  );
         $regstore = new register;

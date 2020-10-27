@@ -92,18 +92,19 @@
 					                  			<div class="form-group">
 							                      	<label for="vehicle_category">Vehicle Category</label>
 							                      	
-							                      	<select id="vehicle_category" class="form-control" name="vehicle_category">
-                                                        <option>Bike</option>
-                                                        <option>Car</option>
+							                      	<select id="vehicle_category" class="form-control vehicle_type" name="vehicle_category">
+														<option value="">select the option  </option>
+														@foreach($categories as $category)
+															<option value="{{$category->id}}">{{$category->category}}</option>
+														@endforeach
                                                     </select>
 							                    </div>
 					                  		</div>
 					                  		<div class="col-md-6">
 					                  			<div class="form-group">
 							                      	<label for="vehicle_brand">Select Brand</label>
-							                      	<select id="vehicle_brand" class="form-control" name="vehicle_vehicle">
-                                                        <option>Honda</option>
-                                                        <option>TVS</option>
+							                      	<select id="vehicle_brand" class="form-control vehicle_type" name="vehicle_vehicle">
+
                                                     </select>
 							                    </div>
 					                  		</div>
@@ -112,9 +113,8 @@
 					                  		<div class="col-md-6">
 					                  			<div class="form-group">
 							                      	<label for="vehicle_model">Vehicle Model</label>
-							                      	<select id="vehicle_model" class="form-control" name="vehicle_model">
-                                                        <option>Honda</option>
-                                                        <option>TVS</option>
+							                      	<select id="vehicle_model" class="form-control vehicle_type"  name="vehicle_model">
+
                                                     </select>
 							                    </div>
 					                  		</div>
@@ -343,6 +343,7 @@
 		</div>
 	</div>
 </div>
+
 
 
 @endsection
