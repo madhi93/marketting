@@ -14,3 +14,37 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+// Route::get('/script', 'HomeController@script')->name('script');
+
+
+Route::get('/listing-page', 'HomeController@listingPage')->name('lpage');
+Route::get('/due-expense-page', 'HomeController@dueExpensePage')->name('dupage');
+Route::get('/due-recipt', 'HomeController@dueRecipt')->name('ddpage');
+
+Route::post('/new-regi', 'HomeController@newRegistration')->name('newreg');
+
+Route::post('/due-recipt', 'HomeController@dueReciptCreate')->name('ddstore');
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
