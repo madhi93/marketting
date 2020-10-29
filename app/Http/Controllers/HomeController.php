@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 
 use App\register;
@@ -40,7 +41,10 @@ class HomeController extends Controller
 
     }
     public function viewlistingPage(){
-        return view('view');
+
+        $registers = Register::all();
+
+        return view('view',compact('registers'));
 
     }
     public function dueRecipt(){
