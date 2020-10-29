@@ -189,7 +189,7 @@
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-											      	<label for="financial_charge">Financial changes(in RS)</label>
+											      	<label for="financial_charge">Financial changes (in Rs)</label>
 											      	<input type="text" class="form-control" id="financial_charge" placeholder="Financial changes" name="financial_charge">
 											    </div>
 											</div>
@@ -212,7 +212,7 @@
 											<div class="col-md-12">
 												<h5 class="card-title">Due Details</h5>
 												<div class="row due-details">
-													<p class="col-md-12">Rs <strong><span class="permonthdue"> </span></strong> for <strong><span class="noofMonths"> </span></strong> Months</p> 
+													<p class="col-md-12">Rs <strong><span class="permonthdue">0</span></strong> for <strong><span class="noofMonths">0</span></strong> Months</p> 
 												</div>
 											</div>
 										</div>

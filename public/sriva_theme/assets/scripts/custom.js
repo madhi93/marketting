@@ -121,6 +121,7 @@ $("#interest").on('focusout', function(){
 
   console.log(monthlyInterest);
   var overallDue = parseFloat(monthlyInterest + inHandDue);
+  overallDue = Math.ceil(overallDue);
   var duePerMonth = parseFloat(overallDue / contract);
 
   var totalDue = overallDue * contract;

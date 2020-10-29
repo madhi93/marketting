@@ -20580,3 +20580,6 @@ a.fc-more:hover {
     display: block;
     text-align: center;
 }
+.due-details p {
+    font-size: 20px;
+}
