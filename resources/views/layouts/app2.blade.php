@@ -85,7 +85,7 @@
 
 <script>
     $('.vehicle_type').on('change', function(e){
-        console.log(e);
+        console.log(e.target.value);
         var id = e.target.value;
         var append_id ="";
         var get_m = "";
@@ -98,6 +98,7 @@
             var append_id = '#vehicle_model';
             get_m = 'model';
         }
+        console.log(get_m);
         $.get(APP_URL+'/create/ajax-vehicle-type?type_id=' + type_id +'&id='+id, function(data) {
             console.log(data);
             console.log(get_m);
@@ -106,7 +107,7 @@
             $.each(data.data, function(index,subCatObj){
                 console.log(subCatObj);
                 console.log(subCatObj[get_m]);
-                var option = "<option value =' "+ index  +"'>"+subCatObj[get_m]+"</option>";
+                var option = "<option value =' "+ subCatObj['id']  +"'>"+subCatObj[get_m]+"</option>";
                 $(append_id).append(''+option+'');
             });
         });
