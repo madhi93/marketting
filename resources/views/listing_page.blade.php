@@ -184,7 +184,7 @@
 											<div class="col-md-6">
 												<div class="form-group">
 											      	<label for="advance_amount">Amount in advance(in RS)</label>
-											      	<input type="text" class="form-control" id="advance_amount" placeholder="Amount in advance" name="advance_amount">
+											      	<input type="number" class="form-control" id="advance_amount" placeholder="Amount in advance" name="advance_amount">
 											    </div>
 											</div>
 											<div class="col-md-6">
@@ -204,7 +204,7 @@
 											<div class="col-md-6">
 												<div class="form-group">
 										      		<label for="total_finance">Total (in Rs.)</label>
-										      		<input type="text" class="form-control" id="total_finance" placeholder="Total" name="total_finance">
+										      		<input type="number" class="form-control" id="total_finance" placeholder="Total" name="total_finance">
 										    	</div>
 											</div>
 										</div>
@@ -212,11 +212,7 @@
 											<div class="col-md-12">
 												<h5 class="card-title">Due Details</h5>
 												<div class="row due-details">
-													<p class="col-md-1">Rs</p> 
-													<p class="col-md-3"></p> 
-													<p class="col-md-1">for</p> 
-													<p class="col-md-3"></p> 
-													<p class="col-md-3">Months</p> 
+													<p class="col-md-12">Rs <strong><span class="permonthdue"> </span></strong> for <strong><span class="noofMonths"> </span></strong> Months</p> 
 												</div>
 											</div>
 										</div>

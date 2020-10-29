@@ -98,17 +98,38 @@ $('.foot-link  .previous-tab').on('click',function(){
     $('.card-header .nav-item [href=' + "'" +getPrevHref + "'" + ']').addClass('active')
   };
 })
+$("#interest").on('focusout', function(){
 
-function dueAmount() {
   var vehicleCost = 30000;
-  var inHand = 100000;
-  var finacialCharge = 700;
-  var interest = 3;
-  var contract = 12;
-  var total = (inHand + finacialCharge);
-  total = total * (interest / 100);
-  var monthlyInterest = total;
-  var overallDue = monthlyInterest * contract + inHand;
-  var duePerMonth = overallDue / contract;
-  return duePerMonth;
-}
+  var inHand = parseFloat($("#advance_amount").val());
+  var finacialCharge = parseFloat($("#financial_charge").val());
+  var interest = parseFloat($("#interest").val());
+  var contract = parseFloat($("#contract_period").val());
+  var inHandwithFinaceCharge = parseFloat((inHand + finacialCharge));
+  var totalInterest = parseFloat(inHandwithFinaceCharge * (interest / 100));
+
+  var monthlyInterest = parseFloat(totalInterest / 12);
+
+  monthlyInterest = Math.ceil(monthlyInterest);
+
+
+  //Monthly Due
+
+  var inHandDue = inHandwithFinaceCharge / contract;
+
+
+
+  console.log(monthlyInterest);
+  var overallDue = parseFloat(monthlyInterest + inHandDue);
+  var duePerMonth = parseFloat(overallDue / contract);
+
+  var totalDue = overallDue * contract;
+  duePerMonth = duePerMonth.toFixed();
+  $("#total_finance").val(parseFloat(totalDue));
+  $('.permonthdue').html(overallDue);
+  $('.noofMonths').html(contract);
+})
+
+
+
+43000 * (30/100)
