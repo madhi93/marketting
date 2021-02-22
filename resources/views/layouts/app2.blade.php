@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sri Vigneshwara Auto Finance</title>
+    <title>Jeremy Good Helpers</title>
     <!-- plugins:css -->
      <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="{{asset('template/vendors/ti-icons/css/themify-icons.css')}}"> -->
@@ -112,6 +112,23 @@
             });
         });
     });
+
+    $('.listing_page').click(function(e) {
+        e.preventDefault();
+        console.log('sss');
+
+        var tab_click = $(this).attr('data-href');
+        console.log(tab_click);
+        $( tab_click).trigger( "click" );
+        return true;
+        var $nonempty = $('.MyClass').filter(function() {
+            return this.value != ''
+        });
+
+        if ($nonempty.length == 0) {
+            alert('empty')
+        }
+    })
 </script>
 
 <!-- End custom js for this page-->
